@@ -160,7 +160,9 @@ TARGET_TRUST_USB_CONTROL_DISABLE := 1
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+#BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+BOARD_AVB_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_KEY_PATH := /home/localhost/.android-certs/releasekey.pk8
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
