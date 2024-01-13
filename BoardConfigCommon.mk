@@ -50,6 +50,16 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := enchilada_defconfig vendor/debugfs.config
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 
+BOARD_VENDOR_KERNEL_MODULES_LOAD := \
+    wil6210.ko \
+    msm_11ad_proxy.ko \
+    rdbg.ko \
+    mpq-adapter.ko \
+    mpq-dmx-hw-plugin.ko \
+    tspp.ko \
+    llcc_perfmon.ko \
+    br_netfilter.ko
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := sdm845
